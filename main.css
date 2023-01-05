@@ -51,6 +51,7 @@ html, body {
 .navbar .logo {
     font-weight: 800;
     font-size: 1.2em;
+    margin: auto 0;
 }
 
 .navbar .nav-links {
@@ -66,9 +67,96 @@ html, body {
     padding: 10px 25px;
 }
 
+.navbar .nav-mobile {
+    display: none;
+}
+
+.burger-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+  
+.burger-line {
+    position: absolute;
+    left: 50%;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.burger-line:nth-child(1) {
+    top: 10px;
+}
+
+.burger-line:nth-child(2) {
+    top: 20px;
+}
+
+.burger-line:nth-child(3) {
+    top: 30px;
+}
+  
+.nav-mobile.open .burger-line:nth-child(1) {
+    transform: rotate(45deg);
+    left: 0;
+    top: 20px;
+}
+
+.nav-mobile.open .burger-line:nth-child(2) {
+    opacity: 0;
+}
+  
+.nav-mobile.open .burger-line:nth-child(3) {
+    transform: rotate(-45deg);
+    left: 0;
+    top: 20px;
+}
+
+.nav-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 1s ease;
+    padding: 60% 0;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.nav-content a {
+    font-size: 2em;
+    font-weight: 800;
+    margin: auto;
+}
+
+.nav-mobile.open .nav-content {
+    opacity: 1;
+}
+  
+
 @media screen and (max-width: 800px) {
-    .navbar {
+    .navbar .nav-links {
         display: none;
+    }
+
+    .navbar .button {
+        display: none;
+    }
+
+    .navbar .nav-mobile {
+        display: block;
     }
 }
 
