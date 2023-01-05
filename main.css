@@ -352,6 +352,11 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
+    .gallery {
+        background-color: var(--primary-color);
+        padding: 15% 10%;
+    }
+
     .swiper {
         width: 100%;
     }
