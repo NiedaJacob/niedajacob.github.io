@@ -8,8 +8,7 @@ function onLoad() {
     function initClass() {
         burgerButton = document.querySelector('.nav-mobile');
         bindEvents();
-        initSwiper();
-        console.log(isMobileDevice());
+        initGlide();
     }
 
     function bindEvents() {
@@ -19,27 +18,21 @@ function onLoad() {
         });
     }
 
-    function initSwiper() {
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            effect: 'coverflow',
-            direction: 'horizontal',
-            centeredSlides: true,
-            slidesPerView: isMobileDevice() ? '1' : '2',
-            loop: true,
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false,
-              },
-          });
+    function initGlide() {
+        let glide = new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            gap: 10,
+            breakpoints: {
+                480: {
+                    perView: 1,
+                    gap: 5
+                }
+            }
+        })
+
+        glide.mount();
     }
 
     function isMobileDevice() {

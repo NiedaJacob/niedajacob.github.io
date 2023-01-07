@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
   </head>
@@ -77,39 +78,39 @@
         <h1>Galeri</h1>
         <p>Ketahui Lebih Lanjut Tentang Manfaat Perlindungan Anda.</p>
       </div>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="assets/1.jfif"></div>
-          <div class="swiper-slide"><img src="assets/2.jfif"></div>
-          <div class="swiper-slide"><img src="assets/3.jfif"></div>
-          <div class="swiper-slide"><img src="assets/4.jfif"></div>
-          <div class="swiper-slide"><img src="assets/5.jfif"></div>
-          <div class="swiper-slide"><img src="assets/6.jfif"></div>
-          <div class="swiper-slide"><img src="assets/7.jfif"></div>
-          <div class="swiper-slide"><img src="assets/8.jfif"></div>
-          <div class="swiper-slide"><img src="assets/9.jfif"></div>
-          <div class="swiper-slide"><img src="assets/10.jfif"></div>
-          <div class="swiper-slide"><img src="assets/11.jfif"></div>
-          <div class="swiper-slide"><img src="assets/12.jfif"></div>
-          <div class="swiper-slide"><img src="assets/13.jfif"></div>
-          <div class="swiper-slide"><img src="assets/14.jfif"></div>
-          <div class="swiper-slide"><img src="assets/15.jfif"></div>
-          <div class="swiper-slide"><img src="assets/16.jfif"></div>
-          <div class="swiper-slide"><img src="assets/17.jfif"></div>
-          <div class="swiper-slide"><img src="assets/18.jfif"></div>
-          <div class="swiper-slide"><img src="assets/19.jfif"></div>
-          <div class="swiper-slide"><img src="assets/20.jfif"></div>
-          <div class="swiper-slide"><img src="assets/21.jfif"></div>
-          <div class="swiper-slide"><img src="assets/22.jfif"></div>
-          <div class="swiper-slide"><img src="assets/23.jfif"></div>
-          <div class="swiper-slide"><img src="assets/24.jfif"></div>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="assets/1.jfif"></li>
+            <li class="glide__slide"><img src="assets/2.jfif"></li>
+            <li class="glide__slide"><img src="assets/3.jfif"></li>
+            <li class="glide__slide"><img src="assets/4.jfif"></li>
+            <li class="glide__slide"><img src="assets/5.jfif"></li>
+            <li class="glide__slide"><img src="assets/6.jfif"></li>
+            <li class="glide__slide"><img src="assets/7.jfif"></li>
+            <li class="glide__slide"><img src="assets/8.jfif"></li>
+            <li class="glide__slide"><img src="assets/9.jfif"></li>
+            <li class="glide__slide"><img src="assets/10.jfif"></li>
+            <li class="glide__slide"><img src="assets/11.jfif"></li>
+            <li class="glide__slide"><img src="assets/12.jfif"></li>
+            <li class="glide__slide"><img src="assets/13.jfif"></li>
+            <li class="glide__slide"><img src="assets/14.jfif"></li>
+            <li class="glide__slide"><img src="assets/15.jfif"></li>
+            <li class="glide__slide"><img src="assets/16.jfif"></li>
+            <li class="glide__slide"><img src="assets/17.jfif"></li>
+            <li class="glide__slide"><img src="assets/18.jfif"></li>
+            <li class="glide__slide"><img src="assets/19.jfif"></li>
+            <li class="glide__slide"><img src="assets/20.jfif"></li>
+            <li class="glide__slide"><img src="assets/21.jfif"></li>
+            <li class="glide__slide"><img src="assets/22.jfif"></li>
+            <li class="glide__slide"><img src="assets/23.jfif"></li>
+            <li class="glide__slide"><img src="assets/24.jfif"></li>
+          </ul>
+          <div class="glide__controls" data-glide-el="controls">
+            <button data-glide-dir="<">&lt;</button>
+            <button data-glide-dir=">">&gt;</button>
+          </div>
         </div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
     </div>  
   </body>

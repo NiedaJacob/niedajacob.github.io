@@ -122,6 +122,10 @@ html, body {
     top: 20px;
 }
 
+.nav-mobile.open > .swiper img {
+    opacity: 0;
+}
+
 .nav-content {
     background-color: #fff;
     display: flex;
@@ -147,6 +151,10 @@ html, body {
   
 
 @media screen and (max-width: 800px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
     .navbar .nav-links {
         display: none;
     }
@@ -281,7 +289,6 @@ html, body {
 @media screen and (max-width: 480px) {
     .about-segment-wrapper {
         flex-direction: column;
-        /* justify-content: center; */
     }
 }
 
@@ -316,57 +323,38 @@ html, body {
     text-transform: capitalize;
 }
 
-/* --- Swiper Section --- */
+/* --- Glide Section --- */
 
-.swiper {
-    width: 1000px;
-    height: 50%;
-    padding-top: 10px;
-}
-
-.swiper-slide {
-    display: flex;
-}
-
-.swiper img {
+.glide {
+    position: relative;
     margin: auto;
-    width: 80%;
+    width: 900px;
+}
+
+.glide img {
     border-radius: 10px;
+    width: 100%;
 }
 
-.swiper-slide.swiper-slide-active img {
-    box-shadow: 0px 0px 10px var(--secondary-color);
+.glide__controls {
+    display: flex;
+    justify-content: center;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.glide__controls button {
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid #fff;
     color: #fff;
-}
-
-.swiper-button-next {
-    right: 220px;
-}
-
-.swiper-button-prev {
-    left: 220px;
+    cursor: pointer;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 480px) {
-    .gallery {
-        background-color: var(--primary-color);
-        padding: 15% 10%;
-    }
-
-    .swiper {
-        width: 100%;
-    }
-
-    .swiper-button-next {
-        right: 0;
-    }
-    
-    .swiper-button-prev {
-        left: 0;
+    .glide {
+        width: 280px;
     }
 }
-
