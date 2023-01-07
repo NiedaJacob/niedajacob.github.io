@@ -290,6 +290,10 @@ html, body {
     .about-segment-wrapper {
         flex-direction: column;
     }
+
+    .about-header p {
+        font-size: 1.8em;
+    }
 }
 
 /* --- Gallery Section --- */
@@ -323,11 +327,18 @@ html, body {
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 480px) {
+    .gallery-header p {
+        font-size: 1.8em;
+    }
+}
+
 /* --- Glide Section --- */
 
 .glide {
     position: relative;
     margin: auto;
+    margin-top: 30px;
     width: 900px;
     transition: opacity 1s ease;
 }
@@ -354,12 +365,13 @@ html, body {
     margin: 10px;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
 @media screen and (max-width: 480px) {
     .glide {
         width: 280px;
     }
 }
 
-.opacity-0 {
-    opacity: 0;
-}
