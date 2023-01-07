@@ -329,6 +329,7 @@ html, body {
     position: relative;
     margin: auto;
     width: 900px;
+    transition: opacity 1s ease;
 }
 
 .glide img {
@@ -357,4 +358,8 @@ html, body {
     .glide {
         width: 280px;
     }
+}
+
+.opacity-0 {
+    opacity: 0;
 }

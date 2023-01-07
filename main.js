@@ -2,19 +2,22 @@ window.addEventListener('load', onLoad);
 
 function onLoad() {
     let burgerButton = null;
+    let glide = null;
 
     initClass();
 
     function initClass() {
         burgerButton = document.querySelector('.nav-mobile');
+        glide = document.querySelector('.glide');
+
         bindEvents();
         initGlide();
     }
 
     function bindEvents() {
         burgerButton.addEventListener('click', () => {
-            console.log('ss');
             burgerButton.classList.toggle('open');
+            glide.classList.toggle('opacity-0');
         });
     }
 
